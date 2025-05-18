@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chifo - Professionelles Raid Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1 class="title-animation">CHIFO</h1>
+            <p class="subtitle">Das ultimative Raid Tool für TikTok</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="video-section">
+            <h2>Produktvorstellung</h2>
+            <div class="video-container">
+                <video width="800" height="450" controls>
+                    <source src="chifo_demo.mp4" type="video/mp4">
+                    Ihr Browser unterstützt das Video-Element nicht.
+                </video>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product-card">
+                <h3>Chifo Raid</h3>
+                <ul>
+                    <li>Massenkommentare unter Videos</li>
+                    <li>Live-Stream Störungen</li>
+                    <li>Account-Bann Umgehung</li>
+                    <li>Automatisierte Angriffe</li>
+                    <li>IP-Rotation</li>
+                </ul>
+                <div class="price">24,99 €</div>
+                <button class="buy-button" onclick="openPurchaseModal('Chifo Raid')">Kaufen</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Chifo Plus <span class="coming-soon">(Bald verfügbar)</span></h3>
+                <ul>
+                    <li>Alle Funktionen von Chifo Raid</li>
+                    <li>Account-Übernahme</li>
+                    <li>Erweiterte Bypass-Techniken</li>
+                    <li>Premium-Support</li>
+                    <li class="requires">*Erfordert Chifo Raid</li>
+                </ul>
+                <div class="price">Preis folgt</div>
+                <button class="buy-button disabled">Bald verfügbar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="terms">
+            <a href="#" onclick="showTerms()">Nutzungsbedingungen</a>
+        </div>
+        <div class="copyright">© 2025 @chifo softworks</div>
+    </footer>
+
+    <!-- Kauf-Modal -->
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Chifo Raid kaufen</h2>
+            <div class="price-display">24,99 €</div>
+            
+            <form id="purchaseForm">
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" placeholder="ihre@email.de" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Handynummer:</label>
+                    <input type="tel" id="phone" placeholder="+49 123 456789" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentMethod">Zahlungsmethode:</label>
+                    <select id="paymentMethod" required>
+                        <option value="">-- Bitte wählen --</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cardNumber">Kartennummer:</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry">Ablaufdatum:</label>
+                        <input type="text" id="expiry" placeholder="MM/JJ" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-purchase">Kaufen</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Nutzungsbedingungen Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content terms-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Nutzungsbedingungen</h2>
+            <div class="terms-text">
+                <p>1. Chifo Softworks haftet nicht für Schäden, die durch die Nutzung dieses Tools entstehen.</p>
+                <p>2. Der Nutzer ist allein verantwortlich für seine Handlungen.</p>
+                <p>3. Die Software wird "wie besehen" ohne Garantien bereitgestellt.</p>
+                <p>4. Keine Rückerstattungen nach dem Kauf.</p>
+                <p>5. Missbrauch der Software kann zur Kündigung des Kontos führen.</p>
+                <p>6. Der Nutzer erklärt sich einverstanden, dass diese Software nur zu Testzwecken verwendet wird.</p>
+                <p>7. Wir überwachen keine Nutzerdaten und speichern keine sensiblen Informationen.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
